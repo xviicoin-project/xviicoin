@@ -48,7 +48,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "NY Times March 15th, 2019 - Terror Attack on New Zealand Mosques Kill 49";
+    const char* pszTimestamp = "Soopa Gathering Site Launch Delayed Until 3/18/19 at 9pm";
     const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -118,10 +118,10 @@ public:
         nDefaultPort = 6917;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1552663812, 2084765384, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1552935600, 2084607878, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("b96cbce7f3c1b18a2360c4ad884dedf369a015cd6a10d5192b78546ecb14e7f7"));
-        assert(genesis.hashMerkleRoot == uint256S("f28d43a416ff5a3d742deafc49817cec73bebb61d1e47d8aa97d34b0450b8d77"));
+        assert(consensus.hashGenesisBlock == uint256S("e57e74eaed7cf6328d30148dd28bcff04ea90418943f5d139417d84e63a07380"));
+        assert(genesis.hashMerkleRoot == uint256S("0ca90adf548c7d91c652e16edd577e859685983e8727c7a0eeede69792349f41"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
      //   vSeeds.emplace_back("seed-a.xviicoin.loshan.co.uk", true);
@@ -145,13 +145,13 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("b96cbce7f3c1b18a2360c4ad884dedf369a015cd6a10d5192b78546ecb14e7f7")},
+                {  0, uint256S("e57e74eaed7cf6328d30148dd28bcff04ea90418943f5d139417d84e63a07380")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block 59c9b9d3fec105bdc716d84caa7579503d5b05b73618d0bf2d5fa639f780a011 (height 1353397).
-            1552663812, // * UNIX timestamp of last known number of transactions
+            1552935600, // * UNIX timestamp of last known number of transactions
             0,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
             0    // * estimated number of transactions per second after that timestamp
@@ -205,17 +205,17 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1486949366, 293345, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1552926000, 2084788674, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(consensus.hashGenesisBlock == uint256S("8f760f9facf3c6fe5d0d9fab2656cb7f971c1e90648f6167e479521bad1c671b"));
+        assert(genesis.hashMerkleRoot == uint256S("032c630d1a9cdd4b2e05e11ddc499e286e22eaf4cd6c27d77f05f49bb31e0f73"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.xviicointools.com", true);
-        vSeeds.emplace_back("seed-b.xviicoin.loshan.co.uk", true);
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
+    //    vSeeds.emplace_back("testnet-seed.xviicointools.com", true);
+    //    vSeeds.emplace_back("seed-b.xviicoin.loshan.co.uk", true);
+    //   vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -232,15 +232,15 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {2056, uint256S("17748a31ba97afdc9a4f86837a39d287e3e7c7290a08a1d816c5969c78a83289")},
+                {2056, uint256S("032c630d1a9cdd4b2e05e11ddc499e286e22eaf4cd6c27d77f05f49bb31e0f73")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block a0afbded94d4be233e191525dc2d467af5c7eab3143c852c3cd549831022aad6 (height 343833)
-            1516406749,
-            794057,
-            0.01
+            1552926000,
+            0,
+            0
         };
 
     }
