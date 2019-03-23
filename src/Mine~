@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Mining... Press [CTRL+C] to stop"
+while :
+do
+  xviicoin-cli generate 1
+done
+
+
