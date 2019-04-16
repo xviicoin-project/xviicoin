@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Mining... Press [CTRL+C] to stop."
+while :
+do
+./xviicoin-cli generatetoaddress 1 JKBBMbBW1TdgmdCXmejvLxaJSceMi9tVQS
+done

@@ -38,6 +38,16 @@
 
 #include <math.h>
 
+//DNS Seeder
+static const char *strMainNetDNSSeed[][2] = {
+{"xviicoin.info", " dnsseed1.xviicoin.info " },
+{"xviicoin.info", " dnsseed2.xviicoin.info " },
+{"xviicoin.info", " dnsseed3.xviicoin.info " },
+        {NULL, NULL}
+};
+
+
+
 // Dump addresses to peers.dat and banlist.dat every 15 minutes (900s)
 #define DUMP_ADDRESSES_INTERVAL 900
 
