@@ -144,16 +144,29 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {  0, uint256S("e57e74eaed7cf6328d30148dd28bcff04ea90418943f5d139417d84e63a07380")},
+                {     0, uint256S("e57e74eaed7cf6328d30148dd28bcff04ea90418943f5d139417d84e63a07380")},
+		{   500, uint256S("07d69860869ee8a6e211f2227330d1c70abeca3dc168d326d0b0694686e87de1")},
+		{  1000, uint256S("3276327bb39e447b5dc5c68ba6f063f298f26a996a25117839e3c314f458d389")},
+		{  1500, uint256S("4b4830a296a38dc8bd239f5bca3625a55d97c49e02405ebbb48f928bdbdc1fd5")},
+		{  2000, uint256S("a936f7d972251b32f878c96ed6cffe9bdde95e7bb337488dc916d1c2c3346f40")},
+		{  2500, uint256S("381be2eecec37b8ce523e676b8bb4a283e886ad5425f37fa78afadfd22d5357b")},
+		{  5000, uint256S("eec7979068870abaeb4c68f9e1d77cb0477181024a43a195c7efe206d5a96179")},
+		{  7500, uint256S("57f849ec03325be75a81715a5321b74ac29ca4646c0a12e0f0c51088398fc33f")},
+		{ 10000, uint256S("f5253a933eb6fb708b723d966cb2027387c94e2a4bc5e36c661596017744ad2e")},
+		{ 25000, uint256S("9618f81cd6e69c5a2d1e1de87e8dbd9cd66e6c34456433621ad1f31c37707918")},
+		{ 50000, uint256S("9c9f0fa5ce9fe0ae1e51f4a3c3df81271674dc6741ce1d9f840ee3b8a3a0279e")},
+		{ 75000, uint256S("358223c2246feae27629d94febaf49546bbe8c252a53463c500cfc96838207f4")},
+		{100000, uint256S("4b8b40e2008d8f181a435368b07353c611442271b4cddcf07d43174dbb07a886")},
+	//	{150000, uint256S("0")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block 0 (height 0).
-            1552935600, // * UNIX timestamp of last known number of transactions
-            0,  // * total number of transactions between genesis and that timestamp
+            1574787365, // * UNIX timestamp of last known number of transactions
+            139607,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-            0    // * estimated number of transactions per second after that timestamp
+            1    // * estimated number of transactions per second after that timestamp
         };
     }
 };
