@@ -3,7 +3,7 @@ XVIIcoin Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/xviicoin-project/xviicoin.svg?branch=master)](https://travis-ci.org/xviicoin-project/xviicoin)
 
-https://xviicoin.org
+https://xviicoin.info
 
 What is XVIIcoin?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. XVIIcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the XVIIcoin Core software, see [https://xviicoin.org](https://xviicoin.org).
+the XVIIcoin Core software, see [https://xviicoin.info](https://xviicoin.info).
 
 License
 -------

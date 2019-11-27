@@ -4,7 +4,7 @@ This issue tracker is only for technical issues related to xviicoin-core.
 
 General xviicoin questions and/or support requests and are best directed to the [xviicointalk.io forums](https://xviicointalk.io/).
 
-For reporting security issues, please contact the XVIIcoin developers on the #xviicoin-dev Freenode IRC channel or alternatively you can email us at contact@xviicoin.org.
+For reporting security issues, please contact the XVIIcoin developers on the #xviicoin-dev Freenode IRC channel or alternatively you can email us at contact@xviicoin.info.
 
 ### Describe the issue
 
